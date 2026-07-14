@@ -334,6 +334,7 @@ h3 {
 }
 
 .research-page .status-band,
+.research-page .visual-intro,
 .research-page .visual-section,
 .research-page .program-panel,
 .research-page .section {
@@ -345,7 +346,7 @@ h3 {
 
 .research-page .status-band {
   margin-top: 50px;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 
 .status-band p {
@@ -363,6 +364,20 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin: 0 0 44px;
+}
+
+.visual-intro {
+  margin-bottom: 18px;
+}
+
+.visual-intro h2 {
+  max-width: 760px;
+}
+
+.visual-intro p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
 }
 
 .visual-card {
@@ -411,9 +426,16 @@ h3 {
 }
 
 .card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--accent-dark);
   font-size: 0.9rem;
   font-weight: 800;
+}
+
+.card-link::after {
+  content: "->";
 }
 
 .program-panel {
@@ -646,6 +668,7 @@ dd {
   }
 
   .research-page .status-band,
+  .research-page .visual-intro,
   .research-page .visual-section,
   .research-page .program-panel,
   .research-page .section {
