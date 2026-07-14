@@ -85,6 +85,11 @@ main {
   margin: 0 auto;
 }
 
+.research-page main {
+  width: 100%;
+  max-width: none;
+}
+
 .hero {
   min-height: 78vh;
   display: grid;
@@ -92,6 +97,92 @@ main {
   align-items: center;
   gap: 56px;
   padding: 54px 0 42px;
+}
+
+.research-hero {
+  position: relative;
+  min-height: calc(100vh - 64px);
+  grid-template-columns: minmax(0, 0.92fr) minmax(260px, 0.46fr);
+  width: 100%;
+  margin: 0;
+  padding: 88px max(40px, calc((100vw - 1120px) / 2)) 72px;
+  overflow: hidden;
+  isolation: isolate;
+  color: #f4f8fb;
+  background:
+    linear-gradient(90deg, rgba(5, 10, 17, 0.97) 0%, rgba(5, 10, 17, 0.89) 34%, rgba(5, 10, 17, 0.46) 67%, rgba(5, 10, 17, 0.14) 100%),
+    linear-gradient(180deg, rgba(5, 10, 17, 0.18) 0%, rgba(5, 10, 17, 0.82) 100%),
+    url("assets/structure-inside-turbulence-hero.webp") center / cover no-repeat;
+}
+
+.research-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 180px;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(5, 10, 17, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none;
+}
+
+.research-hero-text {
+  max-width: 830px;
+}
+
+.research-hero .eyebrow {
+  color: #79d8e9;
+}
+
+.research-hero h1 {
+  max-width: 790px;
+  font-size: clamp(2.55rem, 5.25vw, 4.25rem);
+  text-wrap: balance;
+  text-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+}
+
+.research-hero .lead {
+  color: #c7d4df;
+}
+
+.research-hero .button {
+  border-color: rgba(217, 232, 240, 0.32);
+  background: rgba(8, 18, 28, 0.56);
+  color: #eef7fb;
+  backdrop-filter: blur(10px);
+}
+
+.research-hero .button.primary {
+  border-color: #7ddbeb;
+  background: #d9f7ff;
+  color: #08202a;
+}
+
+.research-hero-callout {
+  align-self: end;
+  width: min(320px, 100%);
+  max-width: 320px;
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  border: 1px solid rgba(186, 219, 232, 0.28);
+  border-radius: 8px;
+  background: rgba(5, 12, 20, 0.58);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(12px);
+}
+
+.research-hero-callout span {
+  display: block;
+  color: #83e3f2;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.research-hero-callout p {
+  margin: 8px 0 0;
+  color: #d8e6ef;
+  overflow-wrap: anywhere;
 }
 
 .business-hero {
@@ -191,6 +282,10 @@ h3 {
   object-fit: cover;
 }
 
+.research-hero-figure img {
+  aspect-ratio: 16 / 10;
+}
+
 .hero-figure figcaption {
   padding: 10px 12px;
   color: #d4d9e2;
@@ -238,6 +333,21 @@ h3 {
   background: var(--soft);
 }
 
+.research-page .status-band,
+.research-page .visual-section,
+.research-page .program-panel,
+.research-page .section {
+  width: calc(100% - 40px);
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.research-page .status-band {
+  margin-top: 50px;
+  margin-bottom: 42px;
+}
+
 .status-band p {
   margin: 4px 0 0;
   color: var(--muted);
@@ -246,6 +356,73 @@ h3 {
 .status-label {
   color: var(--ink);
   font-weight: 800;
+}
+
+.visual-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0 0 44px;
+}
+
+.visual-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.visual-card:hover {
+  border-color: rgba(10, 77, 92, 0.4);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.13);
+  color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.visual-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #0b111b;
+}
+
+.feature-visual:first-child img {
+  object-position: center;
+}
+
+.feature-visual:last-child img {
+  object-position: 58% center;
+}
+
+.visual-card div {
+  padding: 20px;
+}
+
+.visual-card p:not(.eyebrow) {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.card-link {
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.program-panel {
+  margin-bottom: 42px;
+}
+
+.program-panel ul {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-left: 18px;
 }
 
 .section {
@@ -433,7 +610,8 @@ dd {
   .hero,
   .split,
   .profile-grid,
-  .service-grid {
+  .service-grid,
+  .visual-section {
     grid-template-columns: 1fr;
   }
 
@@ -443,10 +621,43 @@ dd {
     gap: 28px;
   }
 
+  .research-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    width: 100%;
+    max-width: none;
+    padding: 44px 20px 54px;
+    background:
+      linear-gradient(180deg, rgba(5, 10, 17, 0.94) 0%, rgba(5, 10, 17, 0.78) 48%, rgba(5, 10, 17, 0.92) 100%),
+      url("assets/structure-inside-turbulence-hero.webp") 62% center / cover no-repeat;
+  }
+
+  .research-hero-callout {
+    align-self: start;
+    width: min(320px, calc(100vw - 40px));
+    max-width: min(320px, calc(100vw - 40px));
+    margin: 0;
+  }
+
+  .research-hero-text {
+    width: min(320px, calc(100vw - 40px));
+    max-width: min(320px, calc(100vw - 40px));
+    min-width: 0;
+  }
+
+  .research-page .status-band,
+  .research-page .visual-section,
+  .research-page .program-panel,
+  .research-page .section {
+    width: calc(100vw - 32px);
+    max-width: calc(100vw - 32px);
+  }
+
   .hero-text,
   .hero-figure,
   .business-panel,
   .research-panel,
+  .visual-card,
   .paper,
   .service-card,
   .bio-card,
@@ -463,6 +674,24 @@ dd {
     max-width: calc(100vw - 32px);
   }
 
+  .research-hero h1,
+  .research-hero .lead,
+  .research-hero .cta-row,
+  .research-hero-text {
+    max-width: min(320px, calc(100vw - 40px));
+  }
+
+  .research-hero h1 {
+    width: min(320px, calc(100vw - 40px));
+    font-size: clamp(1.78rem, 7.3vw, 2.45rem);
+    text-wrap: auto;
+  }
+
+  .research-hero .lead,
+  .research-hero .cta-row {
+    width: min(320px, calc(100vw - 40px));
+  }
+
   .mobile-break {
     display: block;
   }
@@ -472,6 +701,7 @@ dd {
   .status-band p,
   .business-panel li,
   .research-panel li,
+  .visual-card p,
   .paper p,
   .service-card p,
   .bio-card p {
@@ -542,7 +772,8 @@ dd {
   .service-card,
   .link-card,
   .status-band,
-  .hero-figure {
+  .hero-figure,
+  .visual-card {
     width: 320px;
     max-width: calc(100vw - 48px);
   }
@@ -553,6 +784,7 @@ dd {
 
   .business-panel ul,
   .research-panel ul {
+    grid-template-columns: 1fr;
     padding-left: 18px;
   }
 
