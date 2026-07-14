@@ -337,6 +337,7 @@ h3 {
 .research-page .visual-intro,
 .research-page .visual-section,
 .research-page .program-panel,
+.research-page .research-map,
 .research-page .section {
   width: calc(100% - 40px);
   max-width: 1120px;
@@ -422,6 +423,45 @@ h3 {
 .program-panel ul {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding-left: 18px;
+}
+
+.research-map {
+  padding-top: 48px;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.map-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+  background: var(--paper);
+}
+
+.map-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--accent-dark);
+  font-weight: 850;
+}
+
+.map-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.map-card a {
+  font-weight: 800;
 }
 
 .section {
@@ -610,7 +650,8 @@ dd {
   .split,
   .profile-grid,
   .service-grid,
-  .visual-section {
+  .visual-section,
+  .map-grid {
     grid-template-columns: 1fr;
   }
 
@@ -648,6 +689,7 @@ dd {
   .research-page .visual-intro,
   .research-page .visual-section,
   .research-page .program-panel,
+  .research-page .research-map,
   .research-page .section {
     width: calc(100vw - 32px);
     max-width: calc(100vw - 32px);
