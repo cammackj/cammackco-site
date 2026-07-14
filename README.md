@@ -7,7 +7,6 @@ Static website for Cammack Consulting LLC and Joshua D. Cammack's research profi
 - `index.html` - consulting/business homepage.
 - `research/index.html` - research profile and manuscript links.
 - `styles.css` - responsive styling.
-- `assets/spectral-cascade-hero.png` - simplified research hero visual derived from the Navier-Stokes visualization work.
 - `CNAME` - GitHub Pages custom-domain setting for `cammackco.com`.
 - `.nojekyll` - disables Jekyll processing on GitHub Pages.
 - `robots.txt` and `sitemap.xml` - basic search-indexing helpers.

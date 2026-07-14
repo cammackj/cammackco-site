@@ -197,7 +197,8 @@ h3 {
   font-size: 0.82rem;
 }
 
-.business-panel {
+.business-panel,
+.research-panel {
   align-self: center;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -205,7 +206,8 @@ h3 {
   background: var(--soft);
 }
 
-.business-panel ul {
+.business-panel ul,
+.research-panel ul {
   display: grid;
   gap: 12px;
   margin: 0;
@@ -214,6 +216,7 @@ h3 {
 }
 
 .business-panel li,
+.research-panel li,
 .service-card p,
 .link-card a {
   overflow-wrap: anywhere;
@@ -443,6 +446,7 @@ dd {
   .hero-text,
   .hero-figure,
   .business-panel,
+  .research-panel,
   .paper,
   .service-card,
   .bio-card,
@@ -467,6 +471,7 @@ dd {
   h2,
   .status-band p,
   .business-panel li,
+  .research-panel li,
   .paper p,
   .service-card p,
   .bio-card p {
@@ -533,6 +538,7 @@ dd {
   }
 
   .business-panel,
+  .research-panel,
   .service-card,
   .link-card,
   .status-band,
@@ -545,11 +551,13 @@ dd {
     padding: 20px;
   }
 
-  .business-panel ul {
+  .business-panel ul,
+  .research-panel ul {
     padding-left: 18px;
   }
 
-  .business-panel li {
+  .business-panel li,
+  .research-panel li {
     max-width: 250px;
   }
 }
