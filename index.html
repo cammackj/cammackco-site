@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cammack Consulting LLC - Software Engineering and Applied AI</title>
-  <meta name="description" content="Cammack Consulting LLC provides software engineering, automation, data tooling, applied AI, and scientific computing support.">
+  <meta name="description" content="Cammack Consulting LLC provides software engineering, automation, applied AI, data tooling, scientific computing, and research-to-implementation support.">
   <meta name="author" content="Joshua D. Cammack">
   <meta name="robots" content="index,follow">
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://cammackco.com/">
   <meta property="og:title" content="Cammack Consulting LLC">
-  <meta property="og:description" content="Software engineering, automation, applied AI, data tooling, and scientific computing.">
+  <meta property="og:description" content="Software engineering, automation, applied AI, data tooling, scientific computing, and research-to-implementation support.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
   {
@@ -36,12 +36,13 @@
   }
   </script>
 </head>
-<body>
+<body class="business-page">
   <header class="site-header">
     <nav class="nav" aria-label="Primary">
       <a class="brand" href="#top">Cammack Consulting LLC</a>
       <div class="nav-links">
         <a href="#services">Services</a>
+        <a href="resume/">Resume</a>
         <a href="research/">Research</a>
         <a href="#contact">Contact</a>
       </div>
@@ -51,48 +52,108 @@
   <main id="top">
     <section class="hero business-hero">
       <div class="hero-text">
-        <p class="eyebrow">Software consulting</p>
-        <h1>Practical software engineering for automation, applied AI, and scientific systems.</h1>
+        <p class="eyebrow">Software engineering / applied AI / automation</p>
+        <h1>Practical software for complex technical work.</h1>
         <p class="lead">
-          Cammack Consulting LLC helps build reliable software tools, data
-          workflows, automation systems, and applied AI prototypes. The work is
-          grounded in production software experience and a research practice in
-          computational mathematics.
+          Cammack Consulting LLC helps teams build internal tools, data
+          workflows, applied AI systems, and research-facing software with a
+          bias toward clarity, maintainability, and working results.
         </p>
         <div class="cta-row" aria-label="Primary actions">
           <a class="button primary" href="mailto:admin@cammackco.com">Contact</a>
+          <a class="button" href="resume/">Resume</a>
           <a class="button" href="research/">Research profile</a>
         </div>
       </div>
       <div class="business-panel" aria-label="Business summary">
-        <p class="panel-kicker">Focus areas</p>
-        <ul>
-          <li>Software engineering and backend systems</li>
-          <li>Automation and internal tooling</li>
-          <li>Applied AI and machine-learning prototypes</li>
-          <li>Data pipelines and scientific computing workflows</li>
-          <li>Technical research translation and implementation</li>
-        </ul>
+        <p class="panel-kicker">Profile</p>
+        <dl class="business-stats">
+          <div>
+            <dt>Since 2017</dt>
+            <dd>Professional software engineering</dd>
+          </div>
+          <div>
+            <dt>Full-stack</dt>
+            <dd>.NET, Java, Node.js, Angular, Vue, SQL</dd>
+          </div>
+          <div>
+            <dt>Applied AI</dt>
+            <dd>LLM workflows, automation, evaluation tooling</dd>
+          </div>
+          <div>
+            <dt>Research-grade</dt>
+            <dd>Scientific computing and reproducibility habits</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="section-heading">
         <p class="eyebrow">Services</p>
-        <h2>Engineering support where software, data, and research meet.</h2>
+        <h2>Focused technical help for real workflows.</h2>
+        <p>
+          I am most useful where the work has a real operational or technical
+          problem behind it: repeated manual effort, fragmented data, AI tools
+          that need structure, or research ideas that need reliable software.
+        </p>
       </div>
-      <div class="service-grid">
+      <div class="service-grid expanded-services">
         <article class="service-card">
-          <h3>Software Systems</h3>
-          <p>Design and implementation for maintainable tools, APIs, backend services, and workflow automation.</p>
+          <h3>Internal Tools</h3>
+          <p>Custom dashboards, workflow utilities, admin tools, integrations, and automation for repeated operational work.</p>
         </article>
         <article class="service-card">
-          <h3>Applied AI</h3>
-          <p>Prototype and production support for LLM-assisted workflows, model-facing tools, and practical ML systems.</p>
+          <h3>Applied AI Workflows</h3>
+          <p>LLM-assisted tooling, retrieval workflows, prompt pipelines, evaluation harnesses, and model-facing applications.</p>
+        </article>
+        <article class="service-card">
+          <h3>Data Systems</h3>
+          <p>APIs, data pipelines, reporting layers, validation scripts, and glue code that makes messy systems talk clearly.</p>
         </article>
         <article class="service-card">
           <h3>Scientific Computing</h3>
-          <p>Numerical tooling, data analysis pipelines, reproducibility packaging, and performance-aware implementation.</p>
+          <p>Numerical tooling, reproducibility packaging, performance-aware implementation, and research support code.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split profile-summary">
+      <div>
+        <p class="eyebrow">Professional profile</p>
+        <h2>Senior software engineer with a research-builder mindset.</h2>
+        <p>
+          My background spans enterprise consulting, backend services,
+          full-stack applications, internal automation, and AI-assisted
+          engineering workflows. I also maintain an independent mathematical
+          research program, which sharpens the same habits that matter in
+          consulting: decomposition, verification, and careful handoff.
+        </p>
+      </div>
+      <div class="link-card">
+        <span>Resume</span>
+        <a href="resume/">View HTML resume</a>
+        <p>Public, web-native version of my professional background. The PDF resume is source material, not the preferred public format.</p>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="section-heading">
+        <p class="eyebrow">Process</p>
+        <h2>A focused path from unclear problem to working system.</h2>
+      </div>
+      <div class="process-list">
+        <article>
+          <span>Diagnose</span>
+          <p>Clarify the real workflow, failure points, data shape, and minimum useful deliverable.</p>
+        </article>
+        <article>
+          <span>Build</span>
+          <p>Implement the smallest reliable system that can be tested against real usage.</p>
+        </article>
+        <article>
+          <span>Harden</span>
+          <p>Add validation, documentation, automation, and handoff structure where the project needs it.</p>
         </article>
       </div>
     </section>
@@ -100,11 +161,13 @@
     <section class="section split">
       <div>
         <p class="eyebrow">Research</p>
-        <h2>Independent mathematical and computational research.</h2>
+        <h2>Independent research, separate from consulting.</h2>
         <p>
           Joshua D. Cammack maintains an independent research program in
           Navier-Stokes regularity, spectral cascade geometry, turbulence
-          diagnostics, and computational certificate frameworks.
+          diagnostics, and computational certificate frameworks. That research
+          is separate from Cammack Consulting LLC and is linked here for readers
+          interested in the mathematical and computational work.
         </p>
       </div>
       <div class="link-card">
@@ -113,10 +176,36 @@
       </div>
     </section>
 
+    <section class="section fit-section">
+      <div class="section-heading">
+        <p class="eyebrow">Best fit</p>
+        <h2>Good projects have a concrete workflow behind them.</h2>
+      </div>
+      <div class="fit-grid">
+        <div>
+          <h3>Good fit</h3>
+          <ul>
+            <li>Internal software that saves repeated manual effort</li>
+            <li>AI or automation prototypes that need engineering discipline</li>
+            <li>Data workflows that need validation, reporting, or integration</li>
+            <li>Technical ideas that need to become working software</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Usually not a fit</h3>
+          <ul>
+            <li>Open-ended marketing sites with no technical backend need</li>
+            <li>Large agency-style projects requiring a full design department</li>
+            <li>Projects where speed matters more than maintainability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="section contact-section">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2>Start a conversation.</h2>
+        <h2>Have a technical problem worth simplifying?</h2>
         <p>
           For consulting, research, or collaboration inquiries, use the email
           below.
