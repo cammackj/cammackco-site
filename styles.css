@@ -808,6 +808,18 @@ h3 {
   color: var(--muted);
 }
 
+.error-page {
+  min-height: 62vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 0;
+}
+
+.error-page h1 {
+  max-width: 720px;
+}
+
 .paper {
   display: grid;
   grid-template-columns: 100px 1fr;
